@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Data Binding Thru Getters LWC Component" icon-name="custom:custom14">
+        <div class="slds-p-horizontal_medium">
+            <lightning-input name="firstName" label="First Name" onchange={handleChange}></lightning-input>
+            <lightning-input name="lastName" label="Last Name"  onchange={handleChange}></lightning-input>
+            <p class="slds-m-top_medium">Hello, {uppercasedfullname}!</p>
+        </div>
+    </lightning-card>
+    
+</template>

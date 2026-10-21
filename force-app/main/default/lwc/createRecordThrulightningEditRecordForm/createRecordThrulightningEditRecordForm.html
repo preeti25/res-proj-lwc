@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Create Record through lightning-record-edit-form" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <lightning-record-edit-form
+                object-api-name={accountObject}
+                onsuccess={handleSuccess}>
+                <lightning-messages></lightning-messages>
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_1-of-2 slds-p-around_small">
+                        <lightning-input-field field-name={Name}></lightning-input-field>
+                        <lightning-input-field field-name={Type}></lightning-input-field>
+                    </div>
+                    
+                    <div class="slds-col slds-size_1-of-2 slds-p-around_small">
+                        <lightning-input-field field-name={Industry}></lightning-input-field>
+                        <lightning-input-field field-name={AnnualRevenue}></lightning-input-field>
+                    </div>
+                </div>
+                <lightning-button class="slds-m-top_small" type="submit" label="Create Account" variant="brand"></lightning-button>
+            </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+</template>

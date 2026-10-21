@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Conditional Rendering Example" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <lightning-input type="checkbox" label="Are you greater than 18?" checked={isContentVisible} onchange={handleCheckboxChange}></lightning-input>
+            <br/>
+            <template lwc:if={isContentVisible}>
+                <p><b>Name: </b>Preeti Sharma</p>
+                <p><b>Email: </b>preeti.sharma@example.com</p>
+                <p><b>Phone: </b>123-456-7890</p>
+                <p><b>Address: </b>Jaipur Rajasthan</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

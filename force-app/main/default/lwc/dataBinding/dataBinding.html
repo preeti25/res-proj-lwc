@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="hello binding" class="slds-" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+        <p>Hello, {name}</p>
+        <lightning-input label="Name" value={name} onchange={handleChange}></lightning-input>
+        
+<h1 class="slds-text-heading_medium">Copy Billing Address to Mailing Address</h1>
+        <div class="slds-grid slds-gutters">
+            
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-textarea label="Billing Address" value={billingAddress} onchange={handleBillingAddressChange}></lightning-textarea>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-textarea label="Mailing Address" value={mailingAddress} ></lightning-textarea>
+            </div>
+            
+        </div>
+        <div class="slds-align_absolute-center">
+        <lightning-button class="slds-m-top_small" label="Copy Billing Address to Mailing Address" onclick={handleCopyAddress}></lightning-button>
+        </div>
+        <lightning-input type="number" label="Enter Feet Value" value={numberValue} onchange={handleNumberChange}></lightning-input>
+        <p>Value in Inches: {inchesValue}</p>
+    </div>
+    </lightning-card>
+    
+</template>

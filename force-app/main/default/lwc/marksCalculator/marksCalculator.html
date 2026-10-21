@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Calculate Marks" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <lightning-input type="number" label="Subject 1" value={subject1} onchange={handleSubjectValue1}></lightning-input>
+            <lightning-input type="number" label="Subject 2" value={subject2} onchange={handleSubjectValue2}></lightning-input>
+            <lightning-input type="number" label="Subject 3" value={subject3} onchange={handleSubjectValue3}></lightning-input>
+            <lightning-button label="Calculate Total Marks" onclick={handleCalculateTotal}></lightning-button>
+            <lightning-button label="Calculate Percentage" onclick={handleCalculatePercentage}></lightning-button>
+            <lightning-button label="Clear" onclick={handleClear}></lightning-button>
+            <p>Total Marks: {totalMarks}</p>
+            <p>Percentage: {percentage}</p>
+        </div>
+    </lightning-card>
+    
+</template>

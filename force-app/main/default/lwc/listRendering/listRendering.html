@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="List Rendering Example" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <template for:each={Contacts} for:item="contact">
+                <p key={contact.Id}>{contact.Name}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
